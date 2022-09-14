@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HTML Forms</title>
+    </head>
+    <body>
+        <main>
+            <div>
+                <h1>Learning HTML Form</h1>
+                <form action="">
+                    <table>
+                        <tr>
+                            <td align="left"><label for="">Full Name:</label></td>
+                            <td align="left"><input type="text" id="fullName" class="inputField" maxlength="50" required></td>
+                        </tr>
+                        <tr></tr>
+                        <tr>
+                            <td align="left"><label for="">Password:</label></td>
+                            <td align="left"><input type="password" name="myPassword" id="myPassword" required></td>
+                        </tr>
+                        <tr></tr>
+                        <tr>
+                            <td align="left"><label for="">Address:</label></td>
+                            <td align="left"><input type="text" id="address" name="address"></td>
+                        </tr>
+                        <tr></tr>
+                        <tr>
+                            <td align="left"><label for="">Status:</label></td>
+                            <td><input type="radio" name="relStat" id="single"><label for="single">Single</label>
+                                <input type="radio" name="relStat" id="married"><label for="married">Married</label>
+                                <input type="radio" name="relStat" id="widow"><label for="widow">Widow</label>
+                            </td>
+                        </tr>
+                        <tr></tr>
+                        <tr>
+                            <td align="left"><label for="">Date of Birth:</label></td>
+                            <td align="left"><input type="date" name="dob" id="dob" required></td>
+                        </tr>
+                        <tr></tr>
+                        <tr>
+                            <td align="left"><label for="">Age:</label></td>
+                            <td align="left"><input type="number" maxlength="3" name="age" id="age" required></td>
+                        </tr>
+                        <tr></tr>
+                        <tr>
+                            <td align="left"></td>
+                            <td align="left"><input type="checkbox" name="sss" id="sss">SSS</td>
+                        </tr>
+                        <tr></tr>
+                        <tr>
+                            <td align="left"><label for="">Government Benefits:</label></td>
+                            <td align="left"><input type="checkbox" name="hdmf" id="hdmf">HDMF</td>
+                        </tr>
+                        <tr>
+                            <td align="left"></td>
+                            <td align="left"><input type="checkbox" name="philhealth" id="philhealth">Philhealth</td>
+                        </tr>
+                        <tr></tr>
+                        <tr>
+                            <td align="left"><label for="">Preferred Schedule:</label></td>
+                            <td align="left"><input type="time" name="prefTime" id="prefTime"></td>
+                        </tr>
+                        <tr></tr>
+                        <tr>
+                            <td align="left"><label for="payOption">Payout Option:</label></td>
+                            <td align="left">
+                                <select name="paymentOption" id="payOption">
+                                    <option value="annual">Annual</option>
+                                    <option value="semiannual">Semi-Annual</option>
+                                    <option value="quarterly">Quarterly</option>
+                                    <option value="monthly">Monthly</option>
+                                </td>
+                        </tr>
+                        <tr></tr>
+                        <tr>
+                            <td align="left"><label for="">Internet Provider:</label></td>
+                            <td align="left"><input type="text" maxlength="50" name="isp" id="isp"></td>
+                        </tr>
+                        <tr></tr>
+                        <tr>
+                            <td align="left"><label for="">Upload ID Photo:</label></td>
+                            <td align="left"><input type="file" id="mePhoto" name="idPhoto"></td>
+                        </tr>
+                        <tr></tr>
+                        <tr>
+                            <td align="left" ><label for="">Additional Info:</label></td>
+                            <td align="left">
+                                <textarea id="addInfo" name="addInfo" rows="10" cols="30"></textarea>
+                            </td>
+                        </tr>
+                        <tr></tr>
+                        <tr>
+                            <td align="left"></td>
+                            <td align="right"><input type="submit" value="Submit"></td>
+                        </tr>
+                    </table>
+                </form>
+
+            </div>
+        </main>
+    
+    </body>
+</html>
