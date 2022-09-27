@@ -15,45 +15,96 @@
 
     background-color: rgb(244, 241, 238);
     position: relative;
+    height: 250vh;
+
 }
 .right-side-div{
-    float: right;
+    position: absolute;
+    top: 5px;
+    right: 100px;
     width: 30%;
-    margin-left: 10px;
+    height: auto;
+    margin: 10px;
     padding: 10px;
-    
+    border: 4px solid gray;
+    border-radius: 10px;
+    background-color: white;
+}
+/*.left-side-div{
+    position: absolute;
+    display: inline-block;
+    top: 10px;
+    left: 20px;
+    width: 50%;
+    height: 45%;
+    margin: 10px;
+    padding: 10px;
+    border: 4px solid gray;
+    border-radius: 10px;
+    background-color: white;
+}
+
+
+.left-side-div2{
+    position: absolute;
+    top: 1000px;
+    left: 20px;
+    width: 50%;
+    height: 45%;
+    margin: 10px; 
+    padding: 10px;
+    border: 4px solid gray;
+    border-radius: 10px;
+    background-color: white;
+
+}*/
+.left-side-div, .left-side-div2{
+    width: 50%;
+    height: auto;
+    margin-top: 20px;
+    margin-left: 20px;
+    border: 4px solid gray;
+    border-radius: 10px;
+    background-color: white;
+    padding: 10px;
 }
 .left-side-div{
+    position: absolute;
+    top: 10px;
+}
+.left-side-div2{
+    position: absolute;
+    bottom: 10px;
+}
+
+.imgright{
+    width: 70%;
+}
+#imgleft{
+   width: 50%; 
+}
+#left-side-div, #left-side-div2{
     position: relative;
-    float: left;
-    width: 60%;
-    margin-right: 10px;
-    border: 2px solid rgb(248, 243, 243);
-    border-radius: 10px;
-    margin-top: 20px;
-    box-sizing: border-box;
 }
-.alert > button{
+.alert{
     position: absolute;
-    top: 0;
-    right: 0;
-    background-color: chocolate;
+    top: 10px;
+    right: 10px;
+}
+.alert button{
+    background-color: brown;
     color: white;
-    border-radius: 10px;
- 
 }
-
 .promo{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    
-    
+    position: -webkit-sticky;
+    position: sticky;
+    bottom: 0;}
+
+.promo button{
+    background-color: #f44336;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
 }
-.promo > button{
-   background-color: red;
-   color: white;
-
-
-}
-
