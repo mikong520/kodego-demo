@@ -38,6 +38,44 @@ h1 {
     width: 40%;
 
 }
+
+#title-container {
+    /*border: 2px solid black;
+    border-radius: 10px;*/
+
+}
+#title-container *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; 
+}
+
+.effect-container {
+    /*background-color: #111;*/
+    background-image: url(../img/702978.jpg);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 10vh;
+  }
+  .waviy {
+    position: relative;
+  }
+  .waviy span {
+    position: relative;
+    display: inline-block;
+    font-size: 5vw;
+    color: #fff;
+    text-transform: uppercase;
+    animation: flip 3s infinite;
+    animation-delay: calc(.2s * var(--i))
+  }
+  @keyframes flip {
+    0%,80% {
+      transform: rotateY(360deg) 
+    }
+  }
  /*footer*/
  .sitemap-item  {
     text-decoration: none;
@@ -62,4 +100,9 @@ h1 {
 #container-form {
     border: 2px solid rgb(197, 179, 88);
     border-radius: 20px;
+}
+
+.link-batch1 {
+    text-decoration: none;
+    color: black;
 }
