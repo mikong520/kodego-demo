@@ -7,9 +7,8 @@
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet"
-      href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.6.0/build/styles/default.min.css">
-<script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.6.0/build/highlight.min.js"></script>
-<script>hljs.initHighlightingOnLoad();</script>
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/devibeans.min.css">
+    <!--<script>hljs.initHighlightingOnLoad();</script>-->
     <style>
         .background2 {
             height: 60vh;
@@ -121,8 +120,8 @@
 
         </div>
     </div>
-        <div class="col-lg-10">
-            <section class="text-center">
+        <div class="col-lg-12">
+            <section class="text-left">
         
         <div class="row">
           <div class="col-lg-6 d-flex align-items-stretch">
@@ -217,7 +216,7 @@ document.getElementById('foo').appendChild(makeUL(options[1]));
       </div>
             </section>
             
-            <section class="text-center">
+            <section class="text-left">
         
                 <div class="row">
                   <div class="col-lg-6 d-flex align-items-stretch">
@@ -265,34 +264,33 @@ document.getElementById('foo').appendChild(makeUL(options[1]));
                   
                 </div>
         
-                  <div class="col-lg-6 d-flex align-items-stretch">
+                  <div class="col-lg-6 d-flex">
                     <div class="card mx-auto">
                         
                         <div class="card-body shadow p-6">
                             <h5 class="card-title">SCRIPT</h5>
                             <pre>
                                 <code>
-                                    function toDoList() 
-                                {
-                                    var allianzduties = ["Make sure overall delivery of sales performance and
-                                     acquisition of new business. <br/> ","Retain quality business for the assigned 
-                                     branch and area ","Implement strategic initiatives to build and maintain cordial
-                                     business relationship with bank partners and to grow and retain dedicated sales 
-                                     distribution model. ","Offer AZPNBLife’s Traditional and Variable products to PNB
-                                    clients. ","Establish a good relationship with PNB in order to produce lead 
-                                    generations. " ];
+ function toDoList() {
+        var allianzduties = ["Make sure overall delivery of sales performance and
+            acquisition of new business. <br/> ","Retain quality business for the assigned 
+            branch and area ","Implement strategic initiatives to build and maintain cordial
+            business relationship with bank partners and to grow and retain dedicated sales 
+            distribution model. ","Offer AZPNBLife’s Traditional and Variable products to PNB
+            clients. ","Establish a good relationship with PNB in order to produce lead 
+            generations. " ];
   
-                                    var n = document.getElementById('allianz_duties').value;
-                                    var x = 0;
-                                    var text = "";
+        var n = document.getElementById('allianz_duties').value;
+        var x = 0;
+        var text = "";
                                     
-                                    while (x < n) 
-                                    {
-                                        text += allianzduties[x] + "<br>";
-                                        x++;
-                                    }
-                                    document.getElementById('duties').innerHTML = text;
-                                }
+            while (x < n) 
+            {
+                text += allianzduties[x] + "<br>";
+                x++;
+            }
+                document.getElementById('duties').innerHTML = text;
+            }
                                     
                                 </code>
                             </pre>
@@ -306,7 +304,7 @@ document.getElementById('foo').appendChild(makeUL(options[1]));
                 
               </div>
                     </section>
-                    <section class="text-center">
+                    <section class="text-left">
         
                         <div class="row">
                           <div class="col-lg-6 d-flex align-items-stretch">
@@ -362,18 +360,18 @@ document.getElementById('foo').appendChild(makeUL(options[1]));
                                     <pre>
                                         <code>
                                             
-                                            function fahrenheitConversion(temperature)
-                                        {
-                                            temperature = parseFloat(temperature);
-                                            document.getElementById("celsius").value=(temperature-32)/1.8;
-                                        }
+    function fahrenheitConversion(temperature)
+    {
+        temperature = parseFloat(temperature);
+        document.getElementById("celsius").value=(temperature-32)/1.8;
+    }
 
-                                        function celsiusConversion(temperature)
-                                        {
-                                            temperature = parseFloat(temperature);
-                                            document.getElementById("fahrenheit").value=(temperature*1.8)+32;
-                                        }
-                                        }
+    function celsiusConversion(temperature)
+    {
+        temperature = parseFloat(temperature);
+        document.getElementById("fahrenheit").value=(temperature*1.8)+32;
+    }
+    }
                                             
                                         </code>
                                     </pre>
@@ -387,7 +385,7 @@ document.getElementById('foo').appendChild(makeUL(options[1]));
                         
                       </div>
                             </section>
-                            <section class="text-center">
+                            <section class="text-left">
         
                                 <div class="row">
                                   <div class="col-lg-6 d-flex align-items-stretch">
@@ -415,7 +413,7 @@ document.getElementById('foo').appendChild(makeUL(options[1]));
 
                                                     </div>
                                                     <div class="row">
-                                                        <input id="button" type="submit" value="Convert to cm">
+                                                        <input id="button" type="submit" value="Convert to meter">
                                                       </div>
                                                 </form>
                                              
@@ -477,44 +475,45 @@ document.getElementById('foo').appendChild(makeUL(options[1]));
                                         <div class="card-body shadow p-6">
                                             <h5 class="card-title">SCRIPT</h5>
                                             <pre>
-                                                <code>
+                                                <code class="language-javascript">
                                                     
-                                                    const form = document.querySelector('form');
+    const form = document.querySelector('form');
 
-                                                    form.addEventListener('submit', function(e){
+    form.addEventListener('submit', function(e){
     
-                                                    //grab content from feet input
-                                                    let feet = document.querySelector('#feet');
-                                                    let inches = document.querySelector('#inches');
-                                                    const results = document.querySelector('#results');
+                                                    
+    let feet = document.querySelector('#feet');
+    let inches = document.querySelector('#inches');
     
-                                                    e.preventDefault();
+    const results = document.querySelector('#results');
     
-                                                    feet = parseInt(feet.value);
-                                                    inches = parseInt(inches.value);
+    e.preventDefault();
     
-                                                    if (isNaN(feet) || isNaN(inches))
+    feet = parseInt(feet.value);
+    inches = parseInt(inches.value);
+    
+    if (isNaN(feet) || isNaN(inches))
+    {
+        results.textContent = "Please enter a valid number!";
+    } 
+        else if (feet < 0 ) 
+    {
+        results.textContent = "Please enter a feet value > 0";
+    } 
+        else if (inches < 0 || inches >= 12) 
+    {
+         results.textContent = "Please enter an inch value between 0 and 12";
+    } 
+        else 
                                                     {
-                                                        results.textContent = "Please enter a valid number!";
-                                                    } 
-                                                    else if (feet < 0 ) 
-                                                    {
-                                                        results.textContent = "Please enter a feet value > 0";
-                                                    } 
-                                                    else if (inches < 0 || inches >= 12) 
-                                                    {
-                                                        results.textContent = "Please enter an inch value between 0 and 12";
-                                                    } 
-                                                    else 
-                                                    {
-                                                        //make conversion to centimers
-                                                        //cm = inches * 2.54
-                                                        let totalInches = [(feet*12) + inches] * .0254;
-                                                        results.textContent = `${totalInches} m`;
-                                                        document.querySelector('#feet').value = '';
-                                                        document.querySelector('#inches').value = '';
-                                                    }
-                                                    })
+        //make conversion to centimers
+        //cm = inches * 2.54
+        let totalInches = [(feet*12) + inches] * .0254;
+        results.textContent = `${totalInches} m`;
+        document.querySelector('#feet').value = '';
+        document.querySelector('#inches').value = '';
+    }
+    })
                                                     
                                                 </code>
                                             </pre>
@@ -534,6 +533,8 @@ document.getElementById('foo').appendChild(makeUL(options[1]));
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js"></script> 
+    <script>hljs.highlightAll();</script> 
 </body>
 </html>
