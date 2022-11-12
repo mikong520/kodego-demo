@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet"
+      href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.6.0/build/styles/default.min.css">
+<script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.6.0/build/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+    <style>
+        .background2 {
+            height: 60vh;
+            width: 100%;
+            position: relative;
+            color: white;
+            text-shadow: 2px 2px 2px rgba(0, 0, 0, .2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+    
+        }
+        .background2::before {
+            content: "";
+            background-image: url(./assets/images/javascriptbg.jpg);
+            background-size: cover;
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            bottom: 0px;
+            left: 0px;
+            opacity: .5;
+        }
+        .logo-container {
+            position: relative;
+            width: 50%;
+        }
+        #title-container {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box; 
+        }
+
+        .effect-container {
+            /*background-color: #111;*/
+            background-image: url(./assets/images/istockphoto-184601291-170667a.jpg);
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 10vh;
+        }   
+        .waviy {
+            position: relative;
+        } 
+        .waviy span {
+            position: relative;
+            display: inline-block;
+            font-size: 5vw;
+            color: #fff;
+            text-transform: uppercase;
+            animation: flip 3s infinite;
+            animation-delay: calc(.2s * var(--i))
+        }
+         @keyframes flip {
+            0%,80% {
+            transform: rotateY(360deg) 
+         }
+        }
+   
+
+
+
+    </style>
+</head>
+<body>
+    <main>
+        <header>
+            <div class="background2 mb-5">
+            <div class="color-overlay d-flex justify-content-center align-items-center">
+               
+                
+                <div class="logo-container">
+                    <img src="./assets/images/The_Best_Java_Script_Libraries_1800x500-1.jpg" alt="" class="img-fluid" id="#">
+    
+                </div>
+
+                
+                
+                
+            </div>
+        </div>
+    </header>
+    <div class="col-md-12 mb-4 rounded" id="title-container">
+        <div class="effect-container col-md-12">
+            <div class="waviy">
+                <span style="--i:1">J</span>
+                <span style="--i:2">A</span>
+                <span style="--i:3">V</span>
+                <span style="--i:4">A</span>
+                <span style="--i:5">S</span>
+                <span style="--i:6">C</span>
+                <span style="--i:7">R</span>
+                <span style="--i:8">I</span>
+                <span style="--i:9">P</span>
+                <span style="--i:10">T</span>
+                <span style="--i:11">&nbsp;</span>
+                <span style="--i:12">E</span>
+                <span style="--i:13">X</span>
+                <span style="--i:14">C</span>
+                <span style="--i:15">E</span>
+                <span style="--i:16">R</span>
+                <span style="--i:17">C</span>
+                <span style="--i:18">I</span>
+                <span style="--i:19"> S</span>
+                <span style="--i:20">E</span>
+            </div>
+            
+
+        </div>
+    </div>
+        <div class="col-lg-10">
+            <section class="text-center">
+        
+        <div class="row">
+          <div class="col-lg-6 d-flex align-items-stretch">
+            <div class="card mx-auto">
+              
+                <div class="card-body shadow p-6">
+                    <h5 class="card-title">LOOPS - for loop</h5>
+                    <h6>Grocery Items</h6>
+                    <p class="card-text">
+                        Create a simple HTML Page that list out 20 Grocery Items using a for loop. Use &lt;ul&gt; for the items.
+                    </p>
+                    <button>Grocery List</button>
+                    <ul id="foo"></ul>
+
+                    
+                    <script>
+                        var options = [
+        set0 = ['Option 1','Option 2'],
+        set1 = ['Milk','Coffee','Sugar','Flour','Eggs','Rice','Bread','Hotdog','Orange Juice','Hash Brown','Catsup','Mayonnaise','Pickles','Onion','Tomato','Garlic','Beef','Pork','Chicken','Fish']
+    ];
+
+function makeUL(array) {
+    // Create the list element:
+    var list = document.createElement('ul');
+
+    for (var i = 0; i < array.length; i++) {
+        // Create the list item:
+        var item = document.createElement('li');
+
+        // Set its contents:
+        item.appendChild(document.createTextNode(array[i]));
+
+        // Add it to the list:
+        list.appendChild(item);
+    }
+
+    // Finally, return the constructed list:
+    return list;
+}
+
+// Add the contents of options[0] to #foo:
+document.getElementById('foo').appendChild(makeUL(options[1]));
+                    </script>
+                    
+                </div>
+           </div>
+          
+        </div>
+
+          <div class="col-lg-6 d-flex align-items-stretch">
+            <div class="card mx-auto">
+                
+                <div class="card-body shadow p-6">
+                    <h5 class="card-title">SCRIPT</h5>
+                    <pre>
+                        <code>
+                            
+ var options = [
+        set0 = ['Option 1','Option 2'],
+        set1 = ['Milk','Coffee','Sugar','Flour','Eggs',
+                'Rice','Bread','Hotdog','Orange Juice','Hash Brown',
+                'Catsup','Mayonnaise','Pickles','Onion','Tomato',
+                'Garlic','Beef','Pork','Chicken','Fish']
+                 ];
+        
+                            function makeUL(array) {
+                            var list = document.createElement('ul');
+        
+                        for (var i = 0; i < array.length; i++) {
+
+                            var item = document.createElement('li');
+        
+                            item.appendChild(document.createTextNode(array[i]));
+        
+                            list.appendChild(item);
+                        }
+                        return list;
+                            }
+        
+                            document.getElementById('foo').appendChild(makeUL(options[1]));
+                            
+                        </code>
+                    </pre>
+                    
+                </div>
+            </div>
+          </div>
+
+         
+
+        
+      </div>
+            </section>
+            
+            <section class="text-center">
+        
+                <div class="row">
+                  <div class="col-lg-6 d-flex align-items-stretch">
+                    <div class="card mx-auto">
+                      
+                        <div class="card-body shadow p-6">
+                            <h5 class="card-title">LOOPS - while loop</h5>
+                            <h6>To Do List</h6>
+                            <p class="card-text">
+                                Using a while loop, create and HTML page that will display a to do list. &lt;ol&gt; for the items.
+                            </p>
+                            <div id="right">
+                                <p><b>Allianz PNB Life</b><br/>
+                                Financial Advisor<br/>
+                                <br/><br/><br/>
+                            
+                                <button value="Click" onclick="toDoList()">Click</button> to see my top
+                                    <input type="text" id="allianz_duties" value="0"/> job duties here:<br/><br/><br/>
+                                <p id="duties"></p>
+                            
+                            </div>
+                            
+        
+                            
+                            <script>
+                                function toDoList() 
+                                {
+                                    var allianzduties = ["Make sure overall delivery of sales performance and acquisition of new business. <br/> ","Retain quality business for the assigned branch and area ","Implement strategic initiatives to build and maintain cordial business relationship with bank partners and to grow and retain dedicated sales distribution model. ","Offer AZPNBLife’s Traditional and Variable products to PNB clients. ","Establish a good relationship with PNB in order to produce lead generations. " ];
+  
+                                    var n = document.getElementById('allianz_duties').value;
+                                    var x = 0;
+                                    var text = "";
+                                    
+                                    while (x < n) 
+                                    {
+                                        text += allianzduties[x] + "<br>";
+                                        x++;
+                                    }
+                                    document.getElementById('duties').innerHTML = text;
+                                }
+                            </script>
+                            
+                        </div>
+                   </div>
+                  
+                </div>
+        
+                  <div class="col-lg-6 d-flex align-items-stretch">
+                    <div class="card mx-auto">
+                        
+                        <div class="card-body shadow p-6">
+                            <h5 class="card-title">SCRIPT</h5>
+                            <pre>
+                                <code>
+                                    function toDoList() 
+                                {
+                                    var allianzduties = ["Make sure overall delivery of sales performance and
+                                     acquisition of new business. <br/> ","Retain quality business for the assigned 
+                                     branch and area ","Implement strategic initiatives to build and maintain cordial
+                                     business relationship with bank partners and to grow and retain dedicated sales 
+                                     distribution model. ","Offer AZPNBLife’s Traditional and Variable products to PNB
+                                    clients. ","Establish a good relationship with PNB in order to produce lead 
+                                    generations. " ];
+  
+                                    var n = document.getElementById('allianz_duties').value;
+                                    var x = 0;
+                                    var text = "";
+                                    
+                                    while (x < n) 
+                                    {
+                                        text += allianzduties[x] + "<br>";
+                                        x++;
+                                    }
+                                    document.getElementById('duties').innerHTML = text;
+                                }
+                                    
+                                </code>
+                            </pre>
+                            
+                        </div>
+                    </div>
+                  </div>
+        
+                 
+        
+                
+              </div>
+                    </section>
+                    <section class="text-center">
+        
+                        <div class="row">
+                          <div class="col-lg-6 d-flex align-items-stretch">
+                            <div class="card mx-auto">
+                              
+                                <div class="card-body shadow p-6">
+                                    <h5 class="card-title">Function</h5>
+                                    <h6>Temperature Converter</h6>
+                                    <p class="card-text">
+                                        Create a converter HTML Page that will do the following:
+                                    </p>
+                                    <ul>
+                                        <li>Convert temperature reading from Fahrenheit to Celsius</li>
+                                        <li>Convert temperature reading from Celsius to Farenheit</li>
+                                    </ul>
+                                    <div id="right">
+                                        <p>Fahrenheit</p>
+                                        <input type="number" id="fahrenheit" oninput="fahrenheitConversion(this.value)" placeholder="Fahrenheit" />
+                                        <p>Celsius</p>
+                                        <input type="number" id="celsius" oninput="celsiusConversion(this.value)" placeholder="Celsius" />
+                                        
+                                    
+                                       
+                                    </div>
+                                    
+                
+                                    
+                                    <script>
+                                        function fahrenheitConversion(temperature)
+                                        {
+                                            temperature = parseFloat(temperature);
+                                            document.getElementById("celsius").value=(temperature-32)/1.8;
+                                        }
+
+                                        function celsiusConversion(temperature)
+                                        {
+                                            temperature = parseFloat(temperature);
+                                            document.getElementById("fahrenheit").value=(temperature*1.8)+32;
+                                        }
+                                   
+                                    </script>
+                                    
+                                </div>
+                           </div>
+                          
+                        </div>
+                
+                          <div class="col-lg-6 d-flex align-items-stretch">
+                            <div class="card mx-auto">
+                                
+                                <div class="card-body shadow p-6">
+                                    <h5 class="card-title">SCRIPT</h5>
+                                    <pre>
+                                        <code>
+                                            
+                                            function fahrenheitConversion(temperature)
+                                        {
+                                            temperature = parseFloat(temperature);
+                                            document.getElementById("celsius").value=(temperature-32)/1.8;
+                                        }
+
+                                        function celsiusConversion(temperature)
+                                        {
+                                            temperature = parseFloat(temperature);
+                                            document.getElementById("fahrenheit").value=(temperature*1.8)+32;
+                                        }
+                                        }
+                                            
+                                        </code>
+                                    </pre>
+                                    
+                                </div>
+                            </div>
+                          </div>
+                
+                         
+                
+                        
+                      </div>
+                            </section>
+                            <section class="text-center">
+        
+                                <div class="row">
+                                  <div class="col-lg-6 d-flex align-items-stretch">
+                                    <div class="card mx-auto">
+                                      
+                                        <div class="card-body shadow p-6">
+                                            <h5 class="card-title">Function</h5>
+                                            <h6>Height in Meters</h6>
+                                            <p class="card-text">
+                                                Convert height of a person given in foot-inches unit (i.e 5'4" read as five foot and four inches) to meters.
+                                            </p>
+                                           
+                                            <div id="right">
+                                                <form action="" id="calculator">
+                                                    <h3>Height Converter</h3>
+                                                    <div id="results"></div>
+                                                    <div>
+                                                        <div class="row" style="width: 400px; text-align: left; margin:40px auto;">
+                                                            <label for="feet" style="width: 150px; color:black; margin: 25px 50px 25px 20px; font-size: 1.5em;">Feet</label><input id="feet" style="border: 1.5px solid;"><br>
+                                                         </div>
+                                                         
+                                                         <div class="row" style="width: 400px; text-align: left; margin:40px auto;">
+                                                            <label for="inches" style="width: 150px; color:black; margin: 25px 50px 25px 20px; font-size: 1.5em;">Inches</label><input id="inches" style="border: 1.5px solid;"><br>
+                                                         </div>
+
+                                                    </div>
+                                                    <div class="row">
+                                                        <input id="button" type="submit" value="Convert to cm">
+                                                      </div>
+                                                </form>
+                                             
+                                                
+                                            
+                                               
+                                            </div>
+                                            
+                        
+                                            
+                                            <script>
+                                                const form = document.querySelector('form');
+
+                                                form.addEventListener('submit', function(e){
+
+                                                //grab content from feet input
+                                                let feet = document.querySelector('#feet');
+                                                let inches = document.querySelector('#inches');
+                                                const results = document.querySelector('#results');
+
+                                                e.preventDefault();
+
+                                                feet = parseInt(feet.value);
+                                                inches = parseInt(inches.value);
+
+                                                if (isNaN(feet) || isNaN(inches))
+                                                {
+                                                    results.textContent = "Please enter a valid number!";
+                                                } 
+                                                else if (feet < 0 ) 
+                                                {
+                                                    results.textContent = "Please enter a feet value > 0";
+                                                } 
+                                                else if (inches < 0 || inches >= 12) 
+                                                {
+                                                    results.textContent = "Please enter an inch value between 0 and 12";
+                                                } 
+                                                else 
+                                                {
+                                                    //make conversion to centimers
+                                                    //cm = inches * 2.54
+                                                    let totalInches = [(feet*12) + inches] * .0254;
+                                                    results.textContent = `${totalInches} cm`;
+                                                    document.querySelector('#feet').value = '';
+                                                    document.querySelector('#inches').value = '';
+                                                }
+                                                })
+                                           
+                                            </script>
+                                            
+                                        </div>
+                                   </div>
+                                  
+                                </div>
+                        
+                                  <div class="col-lg-6 d-flex align-items-stretch">
+                                    <div class="card mx-auto">
+                                        
+                                        <div class="card-body shadow p-6">
+                                            <h5 class="card-title">SCRIPT</h5>
+                                            <pre>
+                                                <code>
+                                                    
+                                                    function fahrenheitConversion(temperature)
+                                                {
+                                                    temperature = parseFloat(temperature);
+                                                    document.getElementById("celsius").value=(temperature-32)/1.8;
+                                                }
+        
+                                                function celsiusConversion(temperature)
+                                                {
+                                                    temperature = parseFloat(temperature);
+                                                    document.getElementById("fahrenheit").value=(temperature*1.8)+32;
+                                                }
+                                                }
+                                                    
+                                                </code>
+                                            </pre>
+                                            
+                                        </div>
+                                    </div>
+                                  </div>
+                        
+                                 
+                        
+                                
+                              </div>
+                                    </section>
+                    
+            
+        </div>    
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>  
+</body>
+</html>
